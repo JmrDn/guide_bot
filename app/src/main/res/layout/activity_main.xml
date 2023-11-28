@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:gravity="top"
+       android:id="@+id/toolbar"
+       android:background="@color/secondaryColor">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Guide Bot"
+               android:fontFamily="@font/calibribold"
+               android:layout_alignParentStart="true"
+               android:layout_centerVertical="true"
+               android:layout_marginStart="34dp"
+               android:textSize="30sp"
+               android:textColor="@color/white"
+               tools:ignore="HardcodedText" />
+       </RelativeLayout>
+   </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout_Button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textAllCaps="false"
+        android:fontFamily="@font/calibribold"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/baseline_logout_24"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"
+        android:background="?attr/selectableItemBackground"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_centerVertical="true">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/location"
+                  android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  android:layout_weight="1"
+                  android:layout_marginStart="30dp"
+                  android:layout_marginEnd="10dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="10dp"
+                  app:cardCornerRadius="10dp"
+                  android:backgroundTint="@color/secondaryColor"
+                  app:cardElevation="2dp">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+                      <ImageView
+                          android:id="@+id/location_Imageview"
+                          android:layout_width="80dp"
+                          android:layout_height="80dp"
+                          android:src="@drawable/maps"
+                          android:layout_centerHorizontal="true"
+                          android:layout_marginTop="20dp"/>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Live Location"
+                          android:fontFamily="@font/calibribold"
+                          android:textColor="@color/black"
+                          android:textSize="20sp"
+                          android:layout_centerHorizontal="true"
+                          android:layout_below="@id/location_Imageview"
+                          tools:ignore="HardcodedText" />
+                  </RelativeLayout>
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/camera"
+                  android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  android:layout_weight="1"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginEnd="30dp"
+                  app:cardCornerRadius="10dp"
+                  android:backgroundTint="@color/secondaryColor"
+                  app:cardElevation="2dp">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+                      <ImageView
+                          android:id="@+id/camera_Imageview"
+                          android:layout_width="80dp"
+                          android:layout_height="80dp"
+                          android:src="@drawable/camera_icon"
+                          android:layout_centerHorizontal="true"
+                          android:layout_marginTop="20dp"/>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Live Camera"
+                          android:fontFamily="@font/calibribold"
+                          android:textColor="@color/black"
+                          android:textSize="20sp"
+                          android:layout_centerHorizontal="true"
+                          android:layout_below="@id/camera_Imageview"
+                          tools:ignore="HardcodedText" />
+                  </RelativeLayout>
+
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+
+              >
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/pulse"
+                  android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  android:layout_weight="1"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginStart="30dp"
+                  android:layout_marginBottom="20dp"
+                  android:layout_marginEnd="10dp"
+                  app:cardCornerRadius="10dp"
+                  android:backgroundTint="@color/secondaryColor"
+                  app:cardElevation="2dp">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+                      <ImageView
+                          android:id="@+id/pulse_Imageview"
+                          android:layout_width="80dp"
+                          android:layout_height="80dp"
+                          android:src="@drawable/pulse_icon"
+                          android:layout_centerHorizontal="true"
+                          android:layout_marginTop="20dp"/>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Pulse Rate"
+                          android:fontFamily="@font/calibribold"
+                          android:textColor="@color/black"
+                          android:textSize="20sp"
+                          android:layout_centerHorizontal="true"
+                          android:layout_below="@id/pulse_Imageview"
+                          tools:ignore="HardcodedText" />
+                  </RelativeLayout>
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/voice"
+                  android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  android:layout_weight="1"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginEnd="30dp"
+                  android:layout_marginBottom="20dp"
+                  android:layout_marginStart="10dp"
+                  app:cardCornerRadius="10dp"
+                  android:backgroundTint="@color/secondaryColor"
+                  app:cardElevation="2dp">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+                      <ImageView
+                          android:id="@+id/voice_Imageview"
+                          android:layout_width="80dp"
+                          android:layout_height="80dp"
+                          android:src="@drawable/baseline_keyboard_voice_24"
+                          android:layout_centerHorizontal="true"
+                          android:layout_marginTop="20dp"/>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Voice"
+                          android:fontFamily="@font/calibribold"
+                          android:textColor="@color/black"
+                          android:textSize="20sp"
+                          android:layout_centerHorizontal="true"
+                          android:layout_below="@id/voice_Imageview"
+                          tools:ignore="HardcodedText" />
+                  </RelativeLayout>
+
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+      </LinearLayout>
+  </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "239776170370",
+    "project_id": "guide-bot-db",
+    "storage_bucket": "guide-bot-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239776170370:android:2f2a0c486c6cabdeb94f9b",
+        "android_client_info": {
+          "package_name": "com.example.guidebot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXf7oIVz_B-iox5b9vagCK0b2b7cRrvA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
